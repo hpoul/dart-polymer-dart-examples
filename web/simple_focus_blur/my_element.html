@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+<!-- Use polymer-element instead of element -->
+<polymer-element name="input-focus-test">
+  <template>
+    Last Event: {{ lastEvent }}.
+    <input on-focus="handleFocus" on-blur="handleBlur" on-keydown="handleKeyDown" />
+  </template>
+  <script type="application/dart" src="my_element.dart"></script>
+</polymer-element>
