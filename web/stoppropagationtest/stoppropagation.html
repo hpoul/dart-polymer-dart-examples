@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>index</title>
+    <script src='packages/polymer/boot.js'></script>
+  </head>
+ 
+  <body>
+    
+    <polymer-element name="stop-propagation">
+      <template>
+        <div on-click="outerClicked">
+          Outer.
+          <div on-click="innerClicked">
+            Inner.
+          </div>
+        </div>
+      </template>
+      
+      <script type="application/dart" src="stoppropagation.dart"></script>
+    </polymer-element>
+    
+    <stop-propagation></stop-propagation>
+  </body>
+</html>
